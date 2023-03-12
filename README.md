@@ -1,5 +1,4 @@
-# 7CCSMMDD-Coursework
-Networks: A Sirius based editor for network diagrams
+# Networks: A Sirius based editor for network diagrams
 
 Sample project available in uk.ac.kcl.inf.coursework.networks.test 
 
@@ -36,5 +35,4 @@ Legend:
 - setSwRout : connects switch to router. select and drag from switch to router. 
 - setRouInt : connects router to internet. select and drag from router to internet. 
 
-=> Double click on any icon in editor to get description. 
-=> Right click anywhere on the editor and select 'validate' for validation. 
+Double click on any icon in editor to get description. Right click anywhere on the editor and select 'validate' for validation. 
