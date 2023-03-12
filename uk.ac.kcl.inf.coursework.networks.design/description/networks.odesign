@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="networks" version="12.0.0.2017041100">
+  <ownedViewpoints name="Network Design" modelFileExtension="networks">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Network Diagram" domainClass="networks::Network" enablePopupBars="true">
+      <metamodel href="http://www.example.org/networks#/"/>
+      <validationSet name="NetworkValidation">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="DeviceName " level="ERROR" message="Please provide a valid name that has no spaces. Eg. user1" targetClass="networks::Device">
+          <audits auditExpression="aql:self.name.validName()"/>
+          <fixes name="Give name">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="name"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="DeviceIP " level="ERROR" message="Invalid IP address. Please provide a valid ip address. Eg. 192.168.1.12" targetClass="networks::Device">
+          <audits auditExpression="aql:self.address.validIP()"/>
+          <fixes name="Give address">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="x.x.x.x"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NetworkAddress" level="ERROR" message="Invalid Network address. Please provide valid network address. Eg. 192.168.1.0" targetClass="networks::Network">
+          <audits auditExpression="aql:self.networkAddress.validNetworkAddress()"/>
+          <fixes name="Give network address">
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:SetValue" featureName="networkAddress" valueExpression="x.x.x.0"/>
+            </initialOperation>
+          </fixes>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ComSwSegmentCheck" level="ERROR" message="Computer and switch directly connected should be in same segment. Eg Computer: 192.168.1.10, Switch:192.168.1.15" targetClass="networks::Computer">
+          <audits auditExpression="aql:self.computerSwitch.address.getSegment().equals(self.address.getSegment())"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="SvSwSegmentCheck" level="ERROR" message="Server and switch directly connected should be in same segment. Eg Server: 192.168.1.10, Switch:192.168.1.15" targetClass="networks::Server">
+          <audits auditExpression="aql:self.serverSwitch.address.getSegment().equals(self.address.getSegment())"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="SwRouSegmentCheck" level="ERROR" message="Switch and router directly connected should be in same segment. Eg Router: 192.168.1.0, Switch:192.168.1.5" targetClass="networks::Switch">
+          <audits auditExpression="aql:self.switchRouter.address.getSegment().equals(self.address.getSegment())"/>
+        </ownedRules>
+      </validationSet>
+      <defaultLayer name="Default">
+        <nodeMappings name="ComputerNode" labelDirectEdit="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" semanticCandidatesExpression="feature:devices" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" domainClass="networks::Computer">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="aql:self.name + ' '+ self.address" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/computerIcon.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ServerNode" labelDirectEdit="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" domainClass="networks::Server">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="aql:self.name + ' '+ self.address" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/serverIcon.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SwitchNode" labelDirectEdit="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" domainClass="networks::Switch">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="aql:self.name + ' '+ self.address" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/switchIcon.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="RouterNode" labelDirectEdit="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editLabel']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" domainClass="networks::Router">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="9" showIcon="false" labelExpression="aql:self.name + ' '+ self.address" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/rIcon.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="InternetNode" domainClass="networks::Internet">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="Internet" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/internetIcon.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="comSwEdge" deletionDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteComSw']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" sourceMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']" targetMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']" targetFinderExpression="feature:computerSwitch" reconnections="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectComSw']">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="serSwEdge" deletionDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteSerSw']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" sourceMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ServerNode']" targetMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']" targetFinderExpression="feature:serverSwitch" reconnections="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectSerSw']">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="swRoutEdge" deletionDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteSwRout']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" sourceMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']" targetMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode']" targetFinderExpression="feature:switchRouter" reconnections="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectSwRout']">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="rouIntEdge" deletionDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRouInt']" doubleClickDescription="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='generateDescription']" sourceMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode']" targetMapping="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='InternetNode']" targetFinderExpression="feature:routerInternet" reconnections="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectRouInt']">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="createCom" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']" iconPath="/uk.ac.kcl.inf.coursework.networks.design/icons/computerIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="networks::Computer" referenceName="devices">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="computer"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="address"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="createServ" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ServerNode']" iconPath="/uk.ac.kcl.inf.coursework.networks.design/icons/serverIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="networks::Server" referenceName="devices">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="server"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="address"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="createSw" nodeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']" iconPath="/uk.ac.kcl.inf.coursework.networks.design/icons/switchIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="networks::Switch" referenceName="devices">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="switch"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="address"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="createRout" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode']" iconPath="/uk.ac.kcl.inf.coursework.networks.design/icons/rIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="networks::Router" referenceName="devices">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="router"/>
+                  <subModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="address"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="createInt" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='InternetNode']" iconPath="/uk.ac.kcl.inf.coursework.networks.design/icons/internetIcon.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="networks::Internet" referenceName="internet"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="setComSw" edgeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SetValue" featureName="computerSwitch" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="setSerSw" edgeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='serSwEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SetValue" featureName="serverSwitch" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="setSwRout" edgeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='swRoutEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SetValue" featureName="switchRouter" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="setRouInt" edgeMappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='rouIntEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SetValue" featureName="routerInternet" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DirectEditLabel" name="editLabel">
+            <mask mask="{0} {1}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var: element">
+                <subModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:0"/>
+                <subModelOperations xsi:type="tool:SetValue" featureName="address" valueExpression="var:1"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="reconnectComSw">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:SetValue" featureName="computerSwitch" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="reconnectSerSw">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:SetValue" featureName="serverSwitch" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="reconnectSwRout">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:SetValue" featureName="switchRouter" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ReconnectEdgeDescription" name="reconnectRouInt">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:SetValue" featureName="routerInternet" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="deleteComSw">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Unset" featureName="computerSwitch"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="deleteSerSw">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Unset" featureName="serverSwitch"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="deleteSwRout">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Unset" featureName="switchRouter"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="deleteRouInt">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool:Unset" featureName="routerInternet"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:DoubleClickDescription" name="generateDescription" mappings="//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ServerNode'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='rouIntEdge'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='serSwEdge'] //@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='swRoutEdge']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:self.genDescription()"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="uk.ac.kcl.inf.coursework.networks.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

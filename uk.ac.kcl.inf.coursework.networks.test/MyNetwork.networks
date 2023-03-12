@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<networks:Network xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:networks="http://www.example.org/networks" networkAddress="192.168.0.0">
+  <devices xsi:type="networks:Router" name="router1" address="192.168.0.1" routerInternet="//@internet"/>
+  <devices xsi:type="networks:Switch" name="switch1" address="192.168.0.2" switchRouter="192.168.0.1"/>
+  <devices xsi:type="networks:Computer" name="computer1" address="192.168.0.14" computerSwitch="192.168.0.2"/>
+  <devices xsi:type="networks:Server" name="server1" address="192.168.0.15" serverSwitch="192.168.0.2"/>
+  <devices xsi:type="networks:Computer" name="computer2" address="192.168.0.5" computerSwitch="192.168.0.2"/>
+  <internet/>
+</networks:Network>

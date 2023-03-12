@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:networks="http://www.example.org/networks" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_eHLJoGoJEeqqKJuZUnEUPA" selectedViews="_o3WHoGoJEeqqKJuZUnEUPA" version="14.1.0.201810161215">
+    <semanticResources>MyNetwork.networks</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_o3WHoGoJEeqqKJuZUnEUPA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pc_LUGoJEeqqKJuZUnEUPA" name="Network Diagram" repPath="#_pcT14GoJEeqqKJuZUnEUPA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']"/>
+        <target xmi:type="networks:Network" href="MyNetwork.networks#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_pcT14GoJEeqqKJuZUnEUPA" name="Network Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pc5rwGoJEeqqKJuZUnEUPA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_pc6S0GoJEeqqKJuZUnEUPA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_peOhcGoJEeqqKJuZUnEUPA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_peOhcWoJEeqqKJuZUnEUPA" type="Sirius" element="_pcT14GoJEeqqKJuZUnEUPA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_AcDUwWreEeq8EcB_CY7Iaw" type="2001" element="_AcARcGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_AcD70GreEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AcD70WreEeq8EcB_CY7Iaw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AcD70mreEeq8EcB_CY7Iaw" type="3005" element="_AcA4gGreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AcD702reEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AcD71GreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AcDUwmreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AcDUw2reEeq8EcB_CY7Iaw" x="675" y="105" width="100" height="62"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_BMwY8mreEeq8EcB_CY7Iaw" type="2001" element="_BMtVoGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_BMxAAGreEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_BMxAAWreEeq8EcB_CY7Iaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_BMxAAmreEeq8EcB_CY7Iaw" type="3005" element="_BMtVoWreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_BMxAA2reEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BMxABGreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_BMwY82reEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BMwY9GreEeq8EcB_CY7Iaw" x="435" y="150" width="69" height="47"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Fn68tGreEeq8EcB_CY7Iaw" type="2001" element="_Fn35YGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_Fn7jwGreEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Fn7jwWreEeq8EcB_CY7Iaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Fn7jwmreEeq8EcB_CY7Iaw" type="3005" element="_Fn4gcGreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Fn7jw2reEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fn7jxGreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Fn68tWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fn68tmreEeq8EcB_CY7Iaw" x="255" y="196" width="106" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_LQPQEGreEeq8EcB_CY7Iaw" type="2001" element="_LQLlsGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_LQP3IGreEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_LQP3IWreEeq8EcB_CY7Iaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_LQP3ImreEeq8EcB_CY7Iaw" type="3005" element="_LQLlsWreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_LQP3I2reEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LQP3JGreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_LQPQEWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LQPQEmreEeq8EcB_CY7Iaw" x="480" y="300" width="76" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_THybIGreEeq8EcB_CY7Iaw" type="2001" element="_THuwwGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_THybI2reEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_THybJGreEeq8EcB_CY7Iaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_THzCMGreEeq8EcB_CY7Iaw" type="3005" element="_THuwwWreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_THzCMWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_THzCMmreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_THybIWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_THybImreEeq8EcB_CY7Iaw" x="112" y="315" width="61" height="91"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ajy5sGreEeq8EcB_CY7Iaw" type="2001" element="_ajvPUGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_ajy5s2reEeq8EcB_CY7Iaw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ajy5tGreEeq8EcB_CY7Iaw" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ajzgwGreEeq8EcB_CY7Iaw" type="3005" element="_ajvPUWreEeq8EcB_CY7Iaw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ajzgwWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ajzgwmreEeq8EcB_CY7Iaw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ajy5sWreEeq8EcB_CY7Iaw" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ajy5smreEeq8EcB_CY7Iaw" x="75" y="105" width="76" height="77"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_peOhcmoJEeqqKJuZUnEUPA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_DjauUGreEeq8EcB_CY7Iaw" type="4001" element="_DjN6AGreEeq8EcB_CY7Iaw" source="_BMwY8mreEeq8EcB_CY7Iaw" target="_AcDUwWreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_DjdKkGreEeq8EcB_CY7Iaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DjdKkWreEeq8EcB_CY7Iaw" x="1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_DjeYsGreEeq8EcB_CY7Iaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DjeYsWreEeq8EcB_CY7Iaw" x="-2" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Dje_wGreEeq8EcB_CY7Iaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dje_wWreEeq8EcB_CY7Iaw" x="-1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_DjauUWreEeq8EcB_CY7Iaw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_DjauUmreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DjauU2reEeq8EcB_CY7Iaw" points="[2, 0, -171, 36]$[173, -21, 0, 15]$[173, -21, 0, 15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DjiDEGreEeq8EcB_CY7Iaw" id="(0.9710144927536232,0.44680851063829785)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DjiDEWreEeq8EcB_CY7Iaw" id="(0.0,0.4838709677419355)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_I5gCMGreEeq8EcB_CY7Iaw" type="4001" element="_I5c-4GreEeq8EcB_CY7Iaw" source="_Fn68tGreEeq8EcB_CY7Iaw" target="_BMwY8mreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_I5gCNGreEeq8EcB_CY7Iaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I5gCNWreEeq8EcB_CY7Iaw" x="4" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I5gCNmreEeq8EcB_CY7Iaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I5gCN2reEeq8EcB_CY7Iaw" x="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I5gCOGreEeq8EcB_CY7Iaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I5gCOWreEeq8EcB_CY7Iaw" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_I5gCMWreEeq8EcB_CY7Iaw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_I5gCMmreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_I5gCM2reEeq8EcB_CY7Iaw" points="[1, -1, -90, 33]$[75, -29, -16, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I5gpQGreEeq8EcB_CY7Iaw" id="(0.9905660377358491,0.2786885245901639)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I5gpQWreEeq8EcB_CY7Iaw" id="(0.2318840579710145,0.5531914893617021)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_QU6D0GreEeq8EcB_CY7Iaw" type="4001" element="_QU0kQGreEeq8EcB_CY7Iaw" source="_LQPQEGreEeq8EcB_CY7Iaw" target="_Fn68tGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_QU6D1GreEeq8EcB_CY7Iaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QU6D1WreEeq8EcB_CY7Iaw" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QU6D1mreEeq8EcB_CY7Iaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QU6D12reEeq8EcB_CY7Iaw" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QU6D2GreEeq8EcB_CY7Iaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QU6D2WreEeq8EcB_CY7Iaw" x="1" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QU6D0WreEeq8EcB_CY7Iaw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QU6D0mreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QU6D02reEeq8EcB_CY7Iaw" points="[0, 0, 176, 106]$[-151, -92, 25, 14]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QU6q4GreEeq8EcB_CY7Iaw" id="(0.0,0.7377049180327869)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QU6q4WreEeq8EcB_CY7Iaw" id="(0.46226415094339623,0.7540983606557377)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_XQbEcGreEeq8EcB_CY7Iaw" type="4001" element="_XQO3MGreEeq8EcB_CY7Iaw" source="_THybIGreEeq8EcB_CY7Iaw" target="_Fn68tGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_XQbEdGreEeq8EcB_CY7Iaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQbEdWreEeq8EcB_CY7Iaw" x="3" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XQbrgGreEeq8EcB_CY7Iaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQbrgWreEeq8EcB_CY7Iaw" x="-1" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_XQbrgmreEeq8EcB_CY7Iaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XQbrg2reEeq8EcB_CY7Iaw" x="-3" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_XQbEcWreEeq8EcB_CY7Iaw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_XQbEcmreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XQbEc2reEeq8EcB_CY7Iaw" points="[0, 0, -131, 126]$[121, -117, -10, 9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XQbrhGreEeq8EcB_CY7Iaw" id="(1.0,0.6593406593406593)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XQbrhWreEeq8EcB_CY7Iaw" id="(0.46226415094339623,0.8524590163934426)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_eQyv4GreEeq8EcB_CY7Iaw" type="4001" element="_eQvFgmreEeq8EcB_CY7Iaw" source="_ajy5sGreEeq8EcB_CY7Iaw" target="_Fn68tGreEeq8EcB_CY7Iaw">
+          <children xmi:type="notation:Node" xmi:id="_eQzW8GreEeq8EcB_CY7Iaw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQzW8WreEeq8EcB_CY7Iaw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_eQzW8mreEeq8EcB_CY7Iaw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQzW82reEeq8EcB_CY7Iaw" x="-2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_eQzW9GreEeq8EcB_CY7Iaw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQzW9WreEeq8EcB_CY7Iaw" x="-4" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_eQyv4WreEeq8EcB_CY7Iaw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_eQyv4mreEeq8EcB_CY7Iaw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eQyv42reEeq8EcB_CY7Iaw" points="[7, 5, -105, -75]$[112, 80, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eQzW9mreEeq8EcB_CY7Iaw" id="(0.8947368421052632,0.7424242424242424)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eQzW92reEeq8EcB_CY7Iaw" id="(0.0,0.7213114754098361)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_AcARcGreEeq8EcB_CY7Iaw" name="Internet" incomingEdges="_DjN6AGreEeq8EcB_CY7Iaw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="networks:Internet" href="MyNetwork.networks#//@internet"/>
+      <semanticElements xmi:type="networks:Internet" href="MyNetwork.networks#//@internet"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_AcA4gGreEeq8EcB_CY7Iaw" showIcon="false" labelPosition="node" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/internetIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='InternetNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='InternetNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_BMtVoGreEeq8EcB_CY7Iaw" name="router1 192.168.0.1" outgoingEdges="_DjN6AGreEeq8EcB_CY7Iaw" incomingEdges="_I5c-4GreEeq8EcB_CY7Iaw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="networks:Router" href="MyNetwork.networks#192.168.0.1"/>
+      <semanticElements xmi:type="networks:Router" href="MyNetwork.networks#192.168.0.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_BMtVoWreEeq8EcB_CY7Iaw" labelSize="9" showIcon="false" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/rIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='RouterNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DjN6AGreEeq8EcB_CY7Iaw" sourceNode="_BMtVoGreEeq8EcB_CY7Iaw" targetNode="_AcARcGreEeq8EcB_CY7Iaw">
+      <target xmi:type="networks:Router" href="MyNetwork.networks#192.168.0.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DjOhEGreEeq8EcB_CY7Iaw" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='rouIntEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DjOhEWreEeq8EcB_CY7Iaw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='rouIntEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Fn35YGreEeq8EcB_CY7Iaw" name="switch1 192.168.0.2" outgoingEdges="_I5c-4GreEeq8EcB_CY7Iaw" incomingEdges="_QU0kQGreEeq8EcB_CY7Iaw _XQO3MGreEeq8EcB_CY7Iaw _eQvFgmreEeq8EcB_CY7Iaw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="networks:Switch" href="MyNetwork.networks#192.168.0.2"/>
+      <semanticElements xmi:type="networks:Switch" href="MyNetwork.networks#192.168.0.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Fn4gcGreEeq8EcB_CY7Iaw" labelSize="9" showIcon="false" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/switchIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='SwitchNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_I5c-4GreEeq8EcB_CY7Iaw" sourceNode="_Fn35YGreEeq8EcB_CY7Iaw" targetNode="_BMtVoGreEeq8EcB_CY7Iaw">
+      <target xmi:type="networks:Switch" href="MyNetwork.networks#192.168.0.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_I5c-4WreEeq8EcB_CY7Iaw" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='swRoutEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_I5c-4mreEeq8EcB_CY7Iaw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='swRoutEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_LQLlsGreEeq8EcB_CY7Iaw" name="computer1 192.168.0.14" outgoingEdges="_QU0kQGreEeq8EcB_CY7Iaw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.14"/>
+      <semanticElements xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.14"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_LQLlsWreEeq8EcB_CY7Iaw" labelSize="9" showIcon="false" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/computerIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ajvPUGreEeq8EcB_CY7Iaw" name="computer2 192.168.0.5" outgoingEdges="_eQvFgmreEeq8EcB_CY7Iaw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.5"/>
+      <semanticElements xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_ajvPUWreEeq8EcB_CY7Iaw" labelSize="9" showIcon="false" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/computerIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ComputerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QU0kQGreEeq8EcB_CY7Iaw" sourceNode="_LQLlsGreEeq8EcB_CY7Iaw" targetNode="_Fn35YGreEeq8EcB_CY7Iaw">
+      <target xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.14"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QU0kQWreEeq8EcB_CY7Iaw" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QU0kQmreEeq8EcB_CY7Iaw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_THuwwGreEeq8EcB_CY7Iaw" name="server1 192.168.0.15" outgoingEdges="_XQO3MGreEeq8EcB_CY7Iaw" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="networks:Server" href="MyNetwork.networks#192.168.0.15"/>
+      <semanticElements xmi:type="networks:Server" href="MyNetwork.networks#192.168.0.15"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_THuwwWreEeq8EcB_CY7Iaw" labelSize="9" showIcon="false" workspacePath="/uk.ac.kcl.inf.coursework.networks.design/icons/serverIcon.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ServerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@nodeMappings[name='ServerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_XQO3MGreEeq8EcB_CY7Iaw" sourceNode="_THuwwGreEeq8EcB_CY7Iaw" targetNode="_Fn35YGreEeq8EcB_CY7Iaw">
+      <target xmi:type="networks:Server" href="MyNetwork.networks#192.168.0.15"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_XQPeQGreEeq8EcB_CY7Iaw" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='serSwEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_XQPeQWreEeq8EcB_CY7Iaw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='serSwEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_eQvFgmreEeq8EcB_CY7Iaw" sourceNode="_ajvPUGreEeq8EcB_CY7Iaw" targetNode="_Fn35YGreEeq8EcB_CY7Iaw">
+      <target xmi:type="networks:Computer" href="MyNetwork.networks#192.168.0.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_eQvFg2reEeq8EcB_CY7Iaw" targetArrow="NoDecoration" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_eQvFhGreEeq8EcB_CY7Iaw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer/@edgeMappings[name='comSwEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_pcc_0GoJEeqqKJuZUnEUPA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/uk.ac.kcl.inf.coursework.networks.design/description/networks.odesign#//@ownedViewpoints[name='Network%20Design']/@ownedRepresentations[name='Network%20Diagram']/@defaultLayer"/>
+    <target xmi:type="networks:Network" href="MyNetwork.networks#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

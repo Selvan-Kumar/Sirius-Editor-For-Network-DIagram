@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated networks -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="uk.ac.kcl.inf.coursework.networks.presentation.NetworksModelWizardID"
+            name="%_UI_NetworksModelWizard_label"
+            class="uk.ac.kcl.inf.coursework.networks.presentation.NetworksModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NetworksModelFile.gif">
+         <description>%_UI_NetworksModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated networks -->
+      <editor
+            id="uk.ac.kcl.inf.coursework.networks.presentation.NetworksEditorID"
+            name="%_UI_NetworksEditor_label"
+            icon="icons/full/obj16/NetworksModelFile.gif"
+            extensions="networks"
+            class="uk.ac.kcl.inf.coursework.networks.presentation.NetworksEditor"
+            contributorClass="uk.ac.kcl.inf.coursework.networks.presentation.NetworksActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
